@@ -1,4 +1,4 @@
 abstract class AppAssets{
-  static const baseImage='assets/images';
-  static const splash='$baseImage/splash.png';
+  static const baseImage="images";
+  static const splash="$baseImage/splash.png";
 }
