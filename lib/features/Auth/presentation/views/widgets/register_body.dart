@@ -51,7 +51,7 @@ class RegisterBody extends StatelessWidget {
           child: InkWell(
             onTap: () {},
             child: Text(
-              "Already have an account ?",
+              "Already have an account?",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
           ),
