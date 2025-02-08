@@ -1,6 +1,9 @@
 import 'package:cloyhapp/core/Utils/color.dart';
-import 'package:cloyhapp/features/Auth/presentation/views/widgets/social_btn.dart';
+import 'package:cloyhapp/features/Auth/presentation/views/Widgets/social_account_items.dart';
+import 'package:cloyhapp/features/Auth/presentation/views/Widgets/text_onpressed.dart';
 import 'package:flutter/material.dart';
+
+import '../social_btn.dart';
 
 class RegisterBody extends StatelessWidget {
   const RegisterBody({super.key});
@@ -39,7 +42,9 @@ class RegisterBody extends StatelessWidget {
         ),
         SizedBox(height: 30),
         MaterialButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, "homescreen");
+          },
           color: StaticColors.util_color,
           child: Text(
             "SIGN UP",
@@ -47,31 +52,9 @@ class RegisterBody extends StatelessWidget {
           ),
         ),
         SizedBox(height: 20),
-        Center(
-          child: InkWell(
-            onTap: () {},
-            child: Text(
-              "Already have an account?",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-            ),
-          ),
-        ),
+        TextOnpressed(text: "Already have an account?", namescreen: 'loginscreen'),
         SizedBox(height: 30),
-        Center(
-          child: Text(
-            "Or sign up with social account",
-            style: TextStyle(fontSize: 14, color: Colors.black54),
-          ),
-        ),
-        SizedBox(height: 20),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SocialButton(asset: "assets/google.png"),
-            SizedBox(width: 20),
-            SocialButton(asset: "assets/facebook.png"),
-          ],
-        )
+        SocialAccountItems()
       ],
     );
   }
