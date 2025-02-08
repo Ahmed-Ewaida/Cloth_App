@@ -1,4 +1,3 @@
-import 'package:cloyhapp/features/Auth/presentation/views/widgets/register_body.dart';
 import 'package:flutter/material.dart';
 
 import 'Widgets/Register_widgets/register_body.dart';
