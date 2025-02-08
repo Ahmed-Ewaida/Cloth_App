@@ -3,4 +3,5 @@ abstract class AppAssets{
   static const splash="$baseImage/splash.png";
   static const google="$baseImage/google.png";
   static const facebook="$baseImage/facebook.png";
+  static const pullover="$baseImage/pullover with model.png";
 }
