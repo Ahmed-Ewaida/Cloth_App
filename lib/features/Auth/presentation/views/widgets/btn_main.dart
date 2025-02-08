@@ -4,9 +4,10 @@ import '../../../../../core/Utils/color.dart';
 
 class btnMain extends StatelessWidget {
   const btnMain({
-    super.key, required this.onPressed,
+    super.key, required this.onPressed, required this.text,
   });
   final void Function()? onPressed;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -21,7 +22,7 @@ class btnMain extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 100),
         ),
         child: Text(
-          "SIGN UP",
+          text,
           style: TextStyle(color: Colors.white, fontSize: 16),
         ),
       ),

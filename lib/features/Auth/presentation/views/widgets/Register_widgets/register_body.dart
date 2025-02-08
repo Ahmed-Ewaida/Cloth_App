@@ -45,14 +45,12 @@ class RegisterBody extends StatelessWidget {
             ),
           ),
           SizedBox(height: 30),
-          btnMain(onPressed: () {  },),
+          btnMain(onPressed: () {  },text: "SIGN UP",),
 
           SizedBox(height: 20),
-          // Padding(
-          //   padding: const EdgeInsets.only(right: 0),
-          //   child: TextOnpressed(text: "Already have an account?", namescreen: 'loginscreen'),
-          // ),
-          TextButton(onPressed: (){},iconAlignment: IconAlignment.end, child: Text("Already have an account?",textAlign: TextAlign.end,),),
+          TextButton(onPressed: (){
+            Navigator.pushNamed(context, "loginscreen");
+          },child: Text("Already have an account?",),),
           SizedBox(height: 30),
           SocialAccountItems()
         ],
