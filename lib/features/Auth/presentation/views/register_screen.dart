@@ -1,5 +1,7 @@
-import 'package:cloyhapp/features/Auth/presentation/views/widgets/register_body.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/register_body.dart';
+
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
 
