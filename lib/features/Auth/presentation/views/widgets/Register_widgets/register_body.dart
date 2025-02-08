@@ -48,9 +48,12 @@ class RegisterBody extends StatelessWidget {
           btnMain(onPressed: () {  },text: "SIGN UP",),
 
           SizedBox(height: 20),
-          TextButton(onPressed: (){
-            Navigator.pushNamed(context, "loginscreen");
-          },child: Text("Already have an account?",),),
+          Padding(
+            padding: const EdgeInsets.only(left: 174),
+            child: TextButton(onPressed: (){
+              Navigator.pushNamed(context, "loginscreen");
+            },child: Text("Already have an account?",),),
+          ),
           SizedBox(height: 30),
           SocialAccountItems()
         ],
