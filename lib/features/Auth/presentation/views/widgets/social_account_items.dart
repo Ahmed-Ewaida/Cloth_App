@@ -1,3 +1,4 @@
+import 'package:cloyhapp/core/Assets/assets_images.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/Widgets/social_btn.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,9 @@ class SocialAccountItems extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SocialButton(asset: "images/google.png"),
+            SocialButton(asset: AppAssets.google),
             SizedBox(width: 20),
-            SocialButton(asset: "images/facebook.png"),
+            SocialButton(asset: AppAssets.facebook),
           ],
         )
       ],
