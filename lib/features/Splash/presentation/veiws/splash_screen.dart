@@ -15,25 +15,27 @@ class _SplashScreenState extends State<SplashScreen> {
     goToHomeScreen();
     super.initState();
   }
-  goToHomeScreen(){
-    Future.delayed(Duration(seconds: 7),(){
-      Navigator.pushReplacementNamed(context, "registerscreen");
+
+  goToHomeScreen() {
+    Future.delayed(Duration(seconds: 20), () {
+      Navigator.pushNamed(context, "homeScreen");
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Center(
-          child: Container(
-            height: 260,
-            width: 260,
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(AppAssets.splash),fit: BoxFit.fill),
-            ),
+          body: Center(
+        child: Container(
+          height: 260,
+          width: 260,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(AppAssets.splash), fit: BoxFit.fill),
           ),
-        )
-      ),
+        ),
+      )),
     );
   }
 }

@@ -18,9 +18,10 @@ class _LoginBodyDetailsState extends State<LoginBodyDetails> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.only(left: 16,right: 16),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Center(
               child: Text(
@@ -40,7 +41,16 @@ class _LoginBodyDetailsState extends State<LoginBodyDetails> {
             ),
           ),
           /*handle this point to other time */
-          const TextOnpressed(text: "Forgot your password?", namescreen: 'registerscreen'),
+          // Padding(
+          //   padding: const EdgeInsets.only(right: 50),
+          //   child: const TextOnpressed(text: "Forgot your password?", namescreen: 'registerscreen'),
+          // ),
+          Padding(
+            padding: const EdgeInsets.only(left: 184),
+            child: TextButton(onPressed: (){
+              Navigator.pushNamed(context, "registerscreen");
+            },child: Text("Forgot your password?",),),
+          ),
           // MaterialButton(
           //   onPressed: () {
           //

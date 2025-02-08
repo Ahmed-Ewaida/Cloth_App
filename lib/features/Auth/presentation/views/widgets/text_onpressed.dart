@@ -14,7 +14,7 @@ class TextOnpressed extends StatelessWidget {
         },
         child: Row(
           children: [
-            Text("$text"),
+            Text("$text",style: TextStyle(color: Colors.black),),
             Icon(Icons.navigate_next)
           ],
         ),
