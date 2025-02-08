@@ -3,6 +3,7 @@ import 'package:cloyhapp/features/Auth/presentation/views/Widgets/social_account
 import 'package:cloyhapp/features/Auth/presentation/views/Widgets/text_onpressed.dart';
 import 'package:flutter/material.dart';
 
+import '../btn_main.dart';
 import '../social_btn.dart';
 
 class RegisterBody extends StatelessWidget {
@@ -13,7 +14,7 @@ class RegisterBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 16,right: 16),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             "Sign Up",
@@ -44,27 +45,14 @@ class RegisterBody extends StatelessWidget {
             ),
           ),
           SizedBox(height: 30),
-         SizedBox(
-           height: 48,
-           width: 450,
-           child: MaterialButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "homescreen");
-                },
-                color: StaticColors.util_color,
-                child: Text(
-                  "SIGN UP",
-                  style: TextStyle(color: Colors.white, fontSize: 16),
-                ),
-              ),
-         ),
+          btnMain(onPressed: () {  },),
 
           SizedBox(height: 20),
           // Padding(
           //   padding: const EdgeInsets.only(right: 0),
           //   child: TextOnpressed(text: "Already have an account?", namescreen: 'loginscreen'),
           // ),
-          TextButton(onPressed: (){}, child: Text("Already have an account?")),
+          TextButton(onPressed: (){},iconAlignment: IconAlignment.end, child: Text("Already have an account?",textAlign: TextAlign.end,),),
           SizedBox(height: 30),
           SocialAccountItems()
         ],
@@ -72,3 +60,5 @@ class RegisterBody extends StatelessWidget {
     );
   }
 }
+
+
