@@ -6,7 +6,7 @@ class GridviewVerticalItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 164,
-        height: 450,
+        height: 470,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
@@ -25,7 +25,7 @@ class GridviewVerticalItem extends StatelessWidget {
                   children: [...List.generate(4, (index) => const Icon(Icons.star_rate_rounded, color: Color(0xffFFBA49), size: 20),),
                     const SizedBox(width: 3),
                     const Text("(3)", style: TextStyle(fontSize: 11, color: Color(0xff9B9B9B))),
-                    const SizedBox(width: 21),
+                    const SizedBox(width: 19),
                 Container(
                         alignment: Alignment.center,
                         height: 40,

@@ -6,4 +6,9 @@ abstract class AppAssets {
   static const category = "$baseImage/img.png";
   static const testImage = "$baseImage/testImage.png";
   static const pullover = "$baseImage/pullover.png";
+  static const home = "$baseImage/home.png";
+  static const shop = "$baseImage/shop.png";
+  static const bag = "$baseImage/bag.png";
+  static const fav = "$baseImage/fav.png";
+  static const profile = "$baseImage/profile.png";
 }

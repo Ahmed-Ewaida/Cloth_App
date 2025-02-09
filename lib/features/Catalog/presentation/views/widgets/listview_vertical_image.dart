@@ -6,10 +6,10 @@ class ListviewVerticalImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 104,
-      height: 114,
+      height: 100,
       decoration: BoxDecoration(
         image: DecorationImage(image: AssetImage(AppAssets.pullover),
-        fit: BoxFit.cover),
+        fit: BoxFit.fill),
         borderRadius: BorderRadius.only(topLeft:Radius.circular(8) ,bottomLeft:Radius.circular(8))
       ),
     );
