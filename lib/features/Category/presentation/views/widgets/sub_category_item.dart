@@ -18,7 +18,7 @@ class SubCategoryItem extends StatelessWidget {
           height: 100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            color: Colors.grey,
+            color: Colors.white54,
           ),
           child:Row(
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -4,6 +4,7 @@ import 'package:cloyhapp/features/Category/presentation/views/category_screen.da
 import 'package:flutter/material.dart';
 
 import '../features/Category/presentation/views/widgets/search_categort_body.dart';
+import '../features/Home/presentation/main_home_screen.dart';
 import '../features/Home/presentation/veiws/home_screen.dart';
 import '../features/Splash/presentation/veiws/splash_screen.dart';
 
@@ -13,7 +14,7 @@ class AppRouter{
       case '/':return MaterialPageRoute(builder: (_)=>SplashScreen());
       case 'registerscreen':return MaterialPageRoute(builder: (_)=>RegisterScreen());
       case 'loginscreen':return MaterialPageRoute(builder: (_)=>LoginScreen());
-      case 'homescreen':return MaterialPageRoute(builder: (_)=>HomeScreen());
+      case 'homescreen':return MaterialPageRoute(builder: (_)=>MainHomeScreen());
       case 'categgoryscreen':return MaterialPageRoute(builder: (_)=>CategoryScreen());
       case 'SearchCategortBody':return MaterialPageRoute(builder: (_)=>SearchCategortBody());
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
