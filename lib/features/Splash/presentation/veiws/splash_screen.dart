@@ -17,8 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   goToHomeScreen() {
-    Future.delayed(Duration(seconds: 4), () {
-      Navigator.pushNamed(context, "homescreen");
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.pushReplacementNamed(context, "registerscreen");
     });
   }
 

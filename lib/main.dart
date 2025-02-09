@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
       // title: 'Flutter Demo',
       theme: ThemeData.light(
       ),
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: appRouter.generateRoute,
-      // home: CatalogScreen(),
+       debugShowCheckedModeBanner: false,
+       onGenerateRoute: appRouter.generateRoute,
+
     );
   }
 }

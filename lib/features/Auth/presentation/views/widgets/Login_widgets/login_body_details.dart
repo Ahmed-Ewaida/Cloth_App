@@ -48,7 +48,7 @@ class _LoginBodyDetailsState extends State<LoginBodyDetails> {
           Padding(
             padding: const EdgeInsets.only(left: 184),
             child: TextButton(onPressed: (){
-              Navigator.pushNamed(context, "registerscreen");
+              Navigator.pushNamed(context, "forgetscreen");
             },child: Text("Forgot your password?",),),
           ),
           // MaterialButton(
