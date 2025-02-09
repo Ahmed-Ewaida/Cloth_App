@@ -1,3 +1,4 @@
+import 'package:cloyhapp/features/Auth/presentation/views/forget_password.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/login_screen.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/register_screen.dart';
 import 'package:cloyhapp/features/Category/presentation/views/category_screen.dart';
@@ -13,6 +14,7 @@ class AppRouter{
       case '/':return MaterialPageRoute(builder: (_)=>SplashScreen());
       case 'registerscreen':return MaterialPageRoute(builder: (_)=>RegisterScreen());
       case 'loginscreen':return MaterialPageRoute(builder: (_)=>LoginScreen());
+      case 'forgetscreen':return MaterialPageRoute(builder: (_)=>ForgetPassword());
       case 'homescreen':return MaterialPageRoute(builder: (_)=>HomeScreen());
       case 'categgoryscreen':return MaterialPageRoute(builder: (_)=>CategoryScreen());
       case 'SearchCategortBody':return MaterialPageRoute(builder: (_)=>SearchCategortBody());

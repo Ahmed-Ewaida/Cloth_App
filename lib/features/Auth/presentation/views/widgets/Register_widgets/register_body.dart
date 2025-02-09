@@ -45,7 +45,9 @@ class RegisterBody extends StatelessWidget {
             ),
           ),
           SizedBox(height: 30),
-          btnMain(onPressed: () {  },text: "SIGN UP",),
+          btnMain(onPressed: () {
+            Navigator.pushNamed(context, "homescreen");
+          },text: "SIGN UP",),
 
           SizedBox(height: 20),
           Padding(
