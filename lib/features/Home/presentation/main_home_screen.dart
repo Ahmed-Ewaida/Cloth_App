@@ -18,7 +18,6 @@ List<Widget>screen=[
   CatalogBody(),
   CategoryScreen(),
   CategoryScreen(),
-
 ];
 class _MainHomeScreenState extends State<MainHomeScreen> {
 
