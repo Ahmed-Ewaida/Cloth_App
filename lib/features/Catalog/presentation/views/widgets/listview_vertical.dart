@@ -11,7 +11,7 @@ class ListviewVertical extends StatelessWidget {
       padding: EdgeInsets.zero,
       itemBuilder: (context,index){
       return ListviewVerticalItem();
-    },itemCount: 5,
+    },itemCount: 8,
     );
   }
 }

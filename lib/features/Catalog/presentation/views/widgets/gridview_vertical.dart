@@ -14,7 +14,7 @@ class GridviewVertical extends StatelessWidget {
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
         childAspectRatio: 0.63,),
-      itemCount: 5,
+      itemCount: 8,
       itemBuilder: (context, index) {
       return const GridviewVerticalItem();
       },

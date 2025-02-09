@@ -9,7 +9,7 @@ class RowsNewWidgets extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -31,7 +31,7 @@ class RowsNewWidgets extends StatelessWidget {
         ),
         SizedBox(height: 4),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Text(
             'You’ve never seen it before!',
             style: TextStyle(fontSize: 18, color: Color(0xff9B9B9B)),

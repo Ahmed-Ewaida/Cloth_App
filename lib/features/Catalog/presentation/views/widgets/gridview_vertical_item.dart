@@ -6,7 +6,7 @@ class GridviewVerticalItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 164,
-        height: 470,
+        height: 490,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),

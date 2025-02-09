@@ -8,7 +8,7 @@ class RowsSaleWidgets extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -30,7 +30,7 @@ class RowsSaleWidgets extends StatelessWidget {
         ),
         SizedBox(height: 4),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Text(
             'Super summer sale',
             style: TextStyle(fontSize: 18, color: Color(0xff9B9B9B)),
