@@ -28,8 +28,7 @@ class BottomNavigation extends StatelessWidget {
               width: 20,
               height: 20,
             ),
-            label: 'Shop'
-        ),
+            label: 'Shop'),
         BottomNavigationBarItem(
             icon: Image.asset(
               AppAssets.bag,
@@ -56,4 +55,5 @@ class BottomNavigation extends StatelessWidget {
     );
   }
 }
+
 void Function(int)? onTap;
