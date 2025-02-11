@@ -1,4 +1,4 @@
-import 'package:cloyhapp/features/checkOut/presentation/view/checkOut_body.dart';
+import 'package:cloyhapp/features/checkOut/presentation/view/widgets/checkOut_body.dart';
 import 'package:flutter/material.dart';
 
 class CheckOut extends StatelessWidget {

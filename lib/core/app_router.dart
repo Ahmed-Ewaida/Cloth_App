@@ -5,8 +5,9 @@ import 'package:cloyhapp/features/Category/presentation/views/category_screen.da
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../features/Category/presentation/views/widgets/search_categort_bodyearch_categort_body.dart';
+import '../features/Category/presentation/views/widgets/search_categort_body.dart';
 import '../features/Splash/presentation/veiws/splash_screen.dart';
+import '../features/checkOut/presentation/view/checkOut.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -25,9 +26,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => CategoryScreen());
       case 'SearchCategortBody':
         return MaterialPageRoute(builder: (_) => SearchCategortBody());
-      case 'CheckOut':
-        return MaterialPageRoute(
-            builder: (_) => CheckOutBody()); ///// Ana Amira ehehehehehhehehe
+      case 'CheckOut':return MaterialPageRoute(builder: (_) => CheckOut());
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
     }
   }
