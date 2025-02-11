@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/Utils/color.dart';
+import '../color.dart';
 
 class btnMain extends StatelessWidget {
   const btnMain({

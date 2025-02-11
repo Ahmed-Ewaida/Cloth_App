@@ -3,7 +3,7 @@ import 'package:cloyhapp/features/Auth/presentation/views/Widgets/social_account
 import 'package:cloyhapp/features/Auth/presentation/views/Widgets/text_onpressed.dart';
 import 'package:flutter/material.dart';
 
-import '../btn_main.dart';
+import '../../../../../../core/Utils/Widgets/btn_main.dart';
 import '../social_btn.dart';
 
 class RegisterBody extends StatelessWidget {

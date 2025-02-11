@@ -9,21 +9,28 @@ class CheckOutBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 247, 246, 246),
-        title: Text(
-          'CheckOut',
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-        ),
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back),
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Stack(
+        alignment: AlignmentDirectional.bottomCenter,
+        children: [
+          CheckOutListView(),
+          TotalAmount(),
+        ],
       ),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 12),
-        child: Column(
+    );
+  }
+}
+/*CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(child: CheckOutListView()),
+        SliverToBoxAdapter(child: TotalAmount())
+
+      ],
+    );
+
+    ////
+    Column(
           children: [
             Expanded(
               child: CheckOutListView(),
@@ -34,8 +41,7 @@ class CheckOutBody extends StatelessWidget {
             ),
             TotalAmount()
           ],
-        ),
-      ),
-    );
-  }
-}
+
+          //////
+
+        )*/

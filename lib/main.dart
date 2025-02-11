@@ -1,4 +1,5 @@
 import 'package:cloyhapp/features/Catalog/presentation/views/catalog_screen.dart';
+import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
 import 'package:flutter/material.dart';
 import 'package:cloyhapp/core/app_router.dart';
 
@@ -17,8 +18,9 @@ class MyApp extends StatelessWidget {
       // title: 'Flutter Demo',
       theme: ThemeData.light(
       ),
-       debugShowCheckedModeBanner: false,
-       onGenerateRoute: appRouter.generateRoute,
+       // debugShowCheckedModeBanner: false,
+       // onGenerateRoute: appRouter.generateRoute,
+      home: CheckOut(),
 
     );
   }
