@@ -14,7 +14,10 @@ class CheckOutBody extends StatelessWidget {
       child: Stack(
         alignment: AlignmentDirectional.bottomCenter,
         children: [
-          CheckOutListView(),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: CheckOutListView(),
+          ),
           TotalAmount(),
         ],
       ),

@@ -2,6 +2,7 @@ import 'package:cloyhapp/features/Catalog/presentation/views/widgets/catalog_bod
 import 'package:cloyhapp/features/Category/presentation/views/category_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/veiws/home_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/veiws/widget/bottom_navigation.dart';
+import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
 import 'package:flutter/material.dart';
 class MainHomeScreen extends StatefulWidget {
   MainHomeScreen({super.key});
@@ -15,7 +16,7 @@ GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 List<Widget>screen=[
   HomeScreen(),
   CategoryScreen(),
-  CatalogBody(),
+  CheckOut(),
   CategoryScreen(),
   CategoryScreen(),
 ];
