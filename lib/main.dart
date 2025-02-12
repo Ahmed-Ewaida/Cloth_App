@@ -1,4 +1,5 @@
 import 'package:cloyhapp/features/Catalog/presentation/views/catalog_screen.dart';
+import 'package:cloyhapp/features/Favorite/presentation/views/Fav_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
 import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
        // debugShowCheckedModeBanner: false,
        // onGenerateRoute: appRouter.generateRoute,
-      home: MainHomeScreen(),
+      home: FavScreen(),
 
     );
   }

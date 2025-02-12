@@ -2,6 +2,7 @@ import 'package:cloyhapp/features/Auth/presentation/views/forget_password.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/login_screen.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/register_screen.dart';
 import 'package:cloyhapp/features/Category/presentation/views/category_screen.dart';
+import 'package:cloyhapp/features/Favorite/presentation/views/Fav_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => CategoryScreen());
       case 'SearchCategortBody':
         return MaterialPageRoute(builder: (_) => SearchCategortBody());
-      case 'CheckOut':return MaterialPageRoute(builder: (_) => CheckOut());
+      case 'FavoriteScreen':
+        return MaterialPageRoute(builder: (_) => FavScreen());
+
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
     }
   }

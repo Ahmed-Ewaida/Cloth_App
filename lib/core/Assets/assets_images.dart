@@ -11,4 +11,5 @@ abstract class AppAssets {
   static const bag = "$baseImage/bag.png";
   static const fav = "$baseImage/fav.png";
   static const profile = "$baseImage/profile.png";
+  static const Blueshirt = "$baseImage/Blue.png";
 }
