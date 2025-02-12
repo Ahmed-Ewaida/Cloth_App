@@ -1,5 +1,6 @@
-import 'package:cloyhapp/features/Auth/presentation/views/Widgets/btn_main.dart';
+import 'package:cloyhapp/core/Utils/Widgets/btn_main.dart';
 import 'package:flutter/material.dart';
+
 class SearchCategortBody extends StatelessWidget {
   const SearchCategortBody({super.key});
 
@@ -8,27 +9,41 @@ class SearchCategortBody extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(left: 16,right: 16),
+          padding: const EdgeInsets.only(left: 16, right: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(onPressed: (){}, icon: const Icon(Icons.arrow_back_ios)),
-                  const Text("Categories",style: TextStyle(fontSize: 18,),textAlign: TextAlign.center,),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                  IconButton(
+                      onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
+                  const Text(
+                    "Categories",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.search)),
                 ],
               ),
-              SizedBox(height: 16,),
-              btnMain(onPressed: (){}, text: 'View All Items'),
-              SizedBox(height:16 ,),
-              Text("Choose category",style: TextStyle(fontSize: 14,color: Colors.grey)),
+              SizedBox(
+                height: 16,
+              ),
+              btnMain(onPressed: () {}, text: 'View All Items'),
+              SizedBox(
+                height: 16,
+              ),
+              Text("Choose category",
+                  style: TextStyle(fontSize: 14, color: Colors.grey)),
               Expanded(
                 child: ListView.builder(
                   itemCount: 20,
-                    itemBuilder: (BuildContext context, int index)=> ListTile(title: Text("Shirts & Blouses",style: TextStyle(fontSize: 14,color: Colors.black)),),
-                  
+                  itemBuilder: (BuildContext context, int index) => ListTile(
+                    title: Text("Shirts & Blouses",
+                        style: TextStyle(fontSize: 14, color: Colors.black)),
+                  ),
                 ),
               )
             ],

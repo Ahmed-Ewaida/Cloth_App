@@ -1,7 +1,6 @@
+import 'package:cloyhapp/features/checkOut/presentation/view/widgets/container_show_modal.dart';
+import 'package:cloyhapp/features/checkOut/presentation/view/widgets/textField_PromoCode.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../../core/Utils/Widgets/btn_main.dart';
-
 
 class TotalAmountDetails extends StatelessWidget {
   const TotalAmountDetails({super.key});
@@ -11,37 +10,81 @@ class TotalAmountDetails extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        TextField(
-          decoration: InputDecoration(
-            hintText: 'Enter your promo code',
-            hintStyle: TextStyle(color: Colors.grey),
-            border: OutlineInputBorder(),
-            suffixIcon:Container(
-              decoration: BoxDecoration(
-                  color:Color(0xff000000),
-                  borderRadius: BorderRadius.circular(90)
-              ),
-              child: IconButton(
-                icon: Icon(Icons.arrow_forward),
-                color: Color(0xffffffff),
-                onPressed: (){},
-                iconSize: 30,
+        PromoCode(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: const [
+            Text(
+              'Total amount',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              '30\$',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            ),
+          ],
+        ),
+        SizedBox(
+          width: double.infinity,
+          child: ElevatedButton(
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                ),
+                builder: (context) {
+                  double height = MediaQuery.of(context).size.height * 0.6;
+                  double width = MediaQuery.of(context).size.width;
 
+                  return Container(
+                    height: height,
+                    width: width,
+                    padding: const EdgeInsets.all(20),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text(
+                            "Enter your promo code",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(height: 10),
+                          PromoCode(),
+
+                          ///
+                          SizedBox(
+                            height: 200,
+                            child: ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: 5,
+                              itemBuilder: (context, index) {
+                                return const ContainerShowModal(); //////////
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xff570091),
+              padding: const EdgeInsets.symmetric(vertical: 15),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
               ),
+            ),
+            child: const Text(
+              'CHECK OUT',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'Total amount',
-              style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-            ),
-            Text('30\$',style: TextStyle(fontSize: 16,fontWeight: FontWeight.w500),)
-          ],
-        ),
-        btnMain(onPressed: (){}, text: "CHECK OUT")
       ],
     );
   }

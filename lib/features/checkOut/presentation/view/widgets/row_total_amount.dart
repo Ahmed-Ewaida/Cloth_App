@@ -1,5 +1,5 @@
 import 'package:cloyhapp/core/Utils/color.dart';
-import 'package:cloyhapp/features/Auth/presentation/views/Widgets/btn_main.dart';
+
 import 'package:cloyhapp/features/checkOut/presentation/view/widgets/total_amount_details.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class TotalAmount extends StatelessWidget {
       color: Color(0xffffffff),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 5),
-         child: TotalAmountDetails(),
+        child: TotalAmountDetails(),
       ),
     );
   }

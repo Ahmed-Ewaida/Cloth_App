@@ -9,27 +9,19 @@ class PromoCode extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: TextField(
         decoration: InputDecoration(
-          hintText: "Enter your promo code",
+          hintText: 'Enter your promo code',
           hintStyle: TextStyle(color: Colors.grey),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.0),
-            borderSide: BorderSide(color: Colors.black),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.0),
-            borderSide: BorderSide(color: Colors.blue),
-          ),
+          border: OutlineInputBorder(),
           suffixIcon: Container(
-            margin: EdgeInsets.all(4),
             decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.circular(40),
+              color: const Color(0xff000000),
+              borderRadius: BorderRadius.circular(90),
             ),
             child: IconButton(
+              icon: const Icon(Icons.arrow_forward),
+              color: const Color(0xffffffff),
               onPressed: () {},
-              icon: Icon(Icons.arrow_forward),
-              color: Colors.white,
-              iconSize: 20,
+              iconSize: 30,
             ),
           ),
         ),
