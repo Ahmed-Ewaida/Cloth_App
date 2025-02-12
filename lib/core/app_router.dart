@@ -4,6 +4,7 @@ import 'package:cloyhapp/features/Auth/presentation/views/register_screen.dart';
 import 'package:cloyhapp/features/Category/presentation/views/category_screen.dart';
 import 'package:cloyhapp/features/Favorite/presentation/views/Fav_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
+import 'package:cloyhapp/features/MyOrders/presentation/views/MyOrder_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../features/Category/presentation/views/widgets/search_categort_body.dart';
@@ -29,6 +30,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => SearchCategortBody());
       case 'FavoriteScreen':
         return MaterialPageRoute(builder: (_) => FavScreen());
+      case 'My Orders':
+        return MaterialPageRoute(builder: (_) => MyorderScreen());
 
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
     }
