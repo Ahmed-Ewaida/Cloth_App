@@ -4,7 +4,6 @@ import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
 import 'package:cloyhapp/features/MyOrders/presentation/views/MyOrder_screen.dart';
 import 'package:cloyhapp/features/MyOrders/presentation/views/widgets/MyOrder_body.dart';
 import 'package:cloyhapp/features/MyProfile/presentation/views/MyProfile_Screen.dart';
-import 'package:cloyhapp/features/OrderDetails/presentation/views/orderdetails_screen.dart';
 import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
 import 'package:flutter/material.dart';
 import 'package:cloyhapp/core/app_router.dart';
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
        // debugShowCheckedModeBanner: false,
        // onGenerateRoute: appRouter.generateRoute,
-      home: OrderdetailsScreen(),
+      home: MainHomeScreen(),
 
     );
   }

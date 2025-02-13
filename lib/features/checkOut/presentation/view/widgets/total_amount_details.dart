@@ -1,4 +1,3 @@
-import 'package:cloyhapp/features/checkOut/presentation/view/widgets/container_show_modal.dart';
 import 'package:cloyhapp/features/checkOut/presentation/view/widgets/textField_PromoCode.dart';
 import 'package:flutter/material.dart';
 
@@ -35,8 +34,14 @@ class TotalAmountDetails extends StatelessWidget {
                   borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
                 ),
                 builder: (context) {
-                  double height = MediaQuery.of(context).size.height * 0.6;
-                  double width = MediaQuery.of(context).size.width;
+                  double height = MediaQuery
+                      .of(context)
+                      .size
+                      .height * 0.6;
+                  double width = MediaQuery
+                      .of(context)
+                      .size
+                      .width;
 
                   return Container(
                     height: height,
@@ -61,7 +66,7 @@ class TotalAmountDetails extends StatelessWidget {
                               shrinkWrap: true,
                               itemCount: 5,
                               itemBuilder: (context, index) {
-                                return const ContainerShowModal(); //////////
+                             //   return const ContainerShowModal();
                               },
                             ),
                           ),
@@ -88,4 +93,5 @@ class TotalAmountDetails extends StatelessWidget {
       ],
     );
   }
+
 }

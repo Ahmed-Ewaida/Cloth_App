@@ -5,6 +5,8 @@ import 'package:cloyhapp/features/Category/presentation/views/category_screen.da
 import 'package:cloyhapp/features/Favorite/presentation/views/Fav_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
 import 'package:cloyhapp/features/MyOrders/presentation/views/MyOrder_screen.dart';
+import 'package:cloyhapp/features/Prodect/presentation/views/prodect_card_screen.dart';
+import 'package:cloyhapp/features/Prodect/presentation/views/prodect_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../features/Category/presentation/views/widgets/search_categort_body.dart';
@@ -32,6 +34,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => FavScreen());
       case 'My Orders':
         return MaterialPageRoute(builder: (_) => MyorderScreen());
+      case 'prodect':
+        return MaterialPageRoute(builder: (_) => ProdectScreen());
+      case 'prodectcard':
+        return MaterialPageRoute(builder: (_) => ProdectCardScreen());
 
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
     }
