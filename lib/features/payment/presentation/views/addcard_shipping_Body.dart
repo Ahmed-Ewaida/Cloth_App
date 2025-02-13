@@ -1,4 +1,4 @@
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/containers_Screen_shipping.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/containers_Screen_shipping.dart';
 import 'package:flutter/material.dart';
 
 class AddCard extends StatelessWidget {

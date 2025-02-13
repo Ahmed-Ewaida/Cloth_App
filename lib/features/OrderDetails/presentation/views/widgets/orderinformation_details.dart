@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
 class OrderinformationDetails extends StatelessWidget {
    OrderinformationDetails({super.key, required this.title, required this.subtitle, this.image});
   final String title;

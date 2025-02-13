@@ -5,7 +5,7 @@ import 'package:cloyhapp/features/Category/presentation/views/widgets/sub_catego
 import 'package:cloyhapp/features/Category/presentation/views/widgets/sub_category_item_listview.dart';
 import 'package:flutter/material.dart';
 class CategoryBody extends StatelessWidget {
-  const CategoryBody({super.key});
+  const  CategoryBody({super.key});
 
   @override
   Widget build(BuildContext context) {

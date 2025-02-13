@@ -9,7 +9,7 @@ class ProfilepictureContainer extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 37,
-          backgroundImage: AssetImage(AppAssets.profilepicture),
+          backgroundImage: AssetImage(AppAssets.profilepicture)
           ),
         SizedBox(width: 18,),
         Column(

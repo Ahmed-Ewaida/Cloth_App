@@ -1,10 +1,10 @@
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/SuccessResult.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_address.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_city.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_code.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_country.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_fullName.dart';
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/adding_shipping_state/province.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/SuccessResult.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_address.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_city.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_code.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_country.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_fullName.dart';
+import 'package:cloyhapp/features/payment/presentation/views/widgets/adding_shipping_state/province.dart';
 import 'package:flutter/material.dart';
 
 class AddingShippingAddressBody extends StatelessWidget {

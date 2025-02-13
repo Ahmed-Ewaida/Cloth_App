@@ -1,7 +1,8 @@
-import 'package:cloyhapp/features/ismail/presentation/veiws/adding_shipping_address_Body.dart';
+import 'package:cloyhapp/features/payment/presentation/views/adding_shipping_address_Body.dart';
 
-import 'package:cloyhapp/features/ismail/presentation/veiws/widgets/container_widget_shipping.dart';
 import 'package:flutter/material.dart';
+
+import 'container_widget_shipping.dart';
 
 class ContainersShippingAddress extends StatelessWidget {
   const ContainersShippingAddress({super.key});
