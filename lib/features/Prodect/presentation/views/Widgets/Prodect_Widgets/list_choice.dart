@@ -1,4 +1,4 @@
-import 'package:cloyhapp/features/Prodect/presentation/views/Widgets/text_bottom_display.dart';
+import 'package:cloyhapp/features/Prodect/presentation/views/Widgets/Prodect_Widgets/text_bottom_display.dart';
 import 'package:flutter/material.dart';
 
 
@@ -17,9 +17,9 @@ class _ListChoiceState extends State<ListChoice> {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Row(
         children: [
-          TextBottomDisplay(title: "Size", items: 'homescreen'),
+          TextBottomDisplay(title: "Size", items: "/prodectcard"),
           SizedBox(width: 10,),
-          TextBottomDisplay(title: "Color", items: "My Orders"),
+          TextBottomDisplay(title: "Color", items: "/prodectcard"),
           SizedBox(width: 10,),
           InkWell(
               onTap: (){
