@@ -1,3 +1,4 @@
+import 'package:cloyhapp/features/Prodect/presentation/views/Widgets/prodect_body.dart';
 import 'package:flutter/material.dart';
 
 
@@ -6,6 +7,6 @@ class ProdectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const ProdectBody();
   }
 }
