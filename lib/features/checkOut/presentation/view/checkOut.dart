@@ -1,8 +1,6 @@
 import 'package:cloyhapp/features/checkOut/presentation/view/widgets/checkOut_body.dart';
 import 'package:flutter/material.dart';
 
-import '../../../Home/presentation/veiws/widget/bottom_navigation.dart';
-
 class CheckOut extends StatelessWidget {
   const CheckOut({super.key});
 
@@ -20,7 +18,6 @@ class CheckOut extends StatelessWidget {
             icon: Icon(Icons.arrow_back),
           ),
         ),
-        body:CheckOutBody()
-    );
+        body: CheckOutBody());
   }
 }

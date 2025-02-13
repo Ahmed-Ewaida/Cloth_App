@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 class TotalAmountDetails extends StatelessWidget {
   const TotalAmountDetails({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -81,7 +80,10 @@ class TotalAmountDetails extends StatelessWidget {
             ),
             child: const Text(
               'CHECK OUT',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
           ),
         ),

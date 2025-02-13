@@ -20,22 +20,22 @@ class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const FashonSale(),
-            const SizedBox(height: 10),
-            const RowsNewWidgets(),
-            const SizedBox(height: 22),
-            const ListViewNewHorizontal(),
-            const RowsSaleWidgets(),
-            const ListViewSaleHorizontal(),
-            NewCollection(),
-            ThreeContainers(),
-          ],
-        ),
-
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          FashonSale(),
+          SizedBox(height: 10),
+          RowsNewWidgets(),
+          SizedBox(height: 22),
+          ListViewNewHorizontal(),
+          RowsSaleWidgets(),
+          ListViewSaleHorizontal(),
+          NewCollection(),
+          ThreeContainers(),
+        ],
+      ),
     );
   }
 }
+
 int selectedIndex = 0;

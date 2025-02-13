@@ -3,6 +3,7 @@ import 'package:cloyhapp/features/Auth/presentation/views/login_screen.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/register_screen.dart';
 import 'package:cloyhapp/features/Category/presentation/views/category_screen.dart';
 import 'package:cloyhapp/features/Home/presentation/main_home_screen.dart';
+import 'package:cloyhapp/features/shipping_Address/shipping_address_home.dart';
 import 'package:flutter/material.dart';
 
 import '../features/Category/presentation/views/widgets/search_categort_body.dart';
@@ -26,7 +27,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => CategoryScreen());
       case 'SearchCategortBody':
         return MaterialPageRoute(builder: (_) => SearchCategortBody());
-      case 'CheckOut':return MaterialPageRoute(builder: (_) => CheckOut());
+      case 'CheckOut':
+        return MaterialPageRoute(builder: (_) => CheckOut());
+      case 'shippingAddressHome':
+        return MaterialPageRoute(builder: (_) => shippingAddressHome());
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
     }
   }

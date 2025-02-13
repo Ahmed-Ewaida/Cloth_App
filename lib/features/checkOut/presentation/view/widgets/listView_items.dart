@@ -1,3 +1,4 @@
+import 'package:cloyhapp/features/checkOut/presentation/view/widgets/PopUpMenue.dart';
 import 'package:flutter/material.dart';
 import 'package:cloyhapp/core/Assets/assets_images.dart';
 
@@ -103,11 +104,9 @@ class CheckOutListViewItems extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Icon(
-                    Icons.more_vert,
-                    size: 24,
-                    color: Colors.grey,
-                  ),
+                  ///////////////////////////////////////////////////////////////////////////
+                  PropUpMenueWidget(),
+///////////////////////////////////////////////////////////////////////////////////////////////
                   SizedBox(height: 45),
                   Text(
                     '\$50',
