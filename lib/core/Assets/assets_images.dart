@@ -12,4 +12,7 @@ abstract class AppAssets {
   static const fav = "$baseImage/fav.png";
   static const profile = "$baseImage/profile.png";
   static const payment = "$baseImage/payment.png";
+  static const Blueshirt = "$baseImage/Blue.png";
+  static const card = "$baseImage/card.png";
+  static const profilepicture = "$baseImage/ava.png";
 }

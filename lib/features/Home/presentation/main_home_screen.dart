@@ -17,7 +17,7 @@ GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 List<Widget>screen=[
   HomeScreen(),
   CategoryScreen(),
-  CheckOut(),
+  // CheckOut(),
   CategoryScreen(),
   ProdectScreen(),
 ];
