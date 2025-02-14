@@ -23,9 +23,7 @@ class _SettingsChangePaaswordState extends State<SettingsChangePaasword> {
     onPressed: (){
     if(bottomsheet){
     Navigator.pop(context);
-    setState(() {
-    bottomsheet = false;
-    });
+    bottomsheet!=bottomsheet;
     }else{
     Scaffold.of(context)
         .showBottomSheet((BuildContext context) => SettingsBottomsheet());

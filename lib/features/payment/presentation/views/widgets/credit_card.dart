@@ -11,10 +11,7 @@ class CreditCardA extends StatelessWidget {
             left: 16,
             right: 16,
             top: 16,
-            bottom: MediaQuery
-                .of(context)
-                .viewInsets
-                .bottom + 16,
+            bottom: 16,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
