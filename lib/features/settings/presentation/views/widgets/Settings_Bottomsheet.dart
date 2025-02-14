@@ -5,26 +5,12 @@ class SettingsBottomsheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-    // Container(
-    //   margin: EdgeInsets.all(10),
-    //   width: 400,
-    //   height: 460,
-    //   decoration: BoxDecoration(
-    //     borderRadius: BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20)),
-    //
-    //   ),
-    //   child:
-      Padding(
+    return Padding(
         padding: EdgeInsets.only(
         left: 16,
         right: 16,
         top: 16,
-        bottom: MediaQuery
-            .of(context)
-        .viewInsets
-        .bottom + 16,
-    ),
+        bottom: 16,),
     child:
       Column(
         mainAxisSize: MainAxisSize.min,
