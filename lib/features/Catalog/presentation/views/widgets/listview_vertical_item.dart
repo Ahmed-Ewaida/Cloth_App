@@ -1,5 +1,7 @@
 import 'package:cloyhapp/features/Catalog/presentation/views/widgets/listview_vertical_image.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../Prodect/presentation/views/prodect_screen.dart';
 class ListviewVerticalItem extends StatelessWidget {
   const ListviewVerticalItem({super.key});
   @override
@@ -45,7 +47,9 @@ class ListviewVerticalItem extends StatelessWidget {
                           decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
                           color: Colors.grey[100]),
-                          child: IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border,color: Color(0xff9B9B9B),size: 24,))),
+                          child: IconButton(onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProdectScreen()));
+                          }, icon: Icon(Icons.favorite_border,color: Color(0xff9B9B9B),size: 24,))),
                       ),
                     ],
                   ),

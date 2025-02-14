@@ -17,9 +17,9 @@ class _ListChoiceState extends State<ListChoice> {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Row(
         children: [
-          TextBottomDisplay(title: "Size", items: "/prodectcard"),
+          TextBottomDisplay(title: "Size",),
           SizedBox(width: 10,),
-          TextBottomDisplay(title: "Color", items: "/prodectcard"),
+          TextBottomDisplay(title: "Color",),
           SizedBox(width: 10,),
           InkWell(
               onTap: (){

@@ -31,7 +31,7 @@ class _CatalogBodyState extends State<CatalogBody> {
                   isGrid: isGrid,
                   onToggle: () {
                     setState(() {
-                      isGrid = !isGrid;
+                      isGrid =! isGrid;
                     });
                   },
                 ),

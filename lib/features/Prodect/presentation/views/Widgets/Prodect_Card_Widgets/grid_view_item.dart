@@ -23,7 +23,7 @@ class _GridViewItemState extends State<GridViewItem> {
   Widget build(BuildContext context) {
 
     return SizedBox(
-        height: 200,
+      height: 300,
       width: double.infinity,
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -34,7 +34,7 @@ class _GridViewItemState extends State<GridViewItem> {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(10.0),
-            child: TextBottomDisplay(title: "${listOfSize[index]}", items: "items"),
+            child: TextBottomDisplay(title: "${listOfSize[index]}",),
           );
         },
       ),

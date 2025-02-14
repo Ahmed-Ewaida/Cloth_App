@@ -40,27 +40,14 @@ class _LoginBodyDetailsState extends State<LoginBodyDetails> {
               border: OutlineInputBorder(),
             ),
           ),
-          /*handle this point to other time */
-          // Padding(
-          //   padding: const EdgeInsets.only(right: 50),
-          //   child: const TextOnpressed(text: "Forgot your password?", namescreen: 'registerscreen'),
-          // ),
+
           Padding(
             padding: const EdgeInsets.only(left: 184),
             child: TextButton(onPressed: (){
-              Navigator.pushNamed(context, "forgetscreen");
+              Navigator.pushNamed(context, "ForgetScreen");
             },child: Text("Forgot your password?",),),
           ),
-          // MaterialButton(
-          //   onPressed: () {
-          //
-          //   },textColor: const Color(0xffffffff),
-          //   child: const Text(
-          //     "    LOGIN    ",
-          //     style: TextStyle(fontSize: 30,),
-          //   ),
-          //   color: StaticColors.util_color,
-          // ),
+
           btnMain(onPressed: (){
             Navigator.pushNamed(context, 'homescreen');
           }, text: "LOGIN"),

@@ -6,6 +6,7 @@ import 'package:cloyhapp/features/MyOrders/presentation/views/widgets/MyOrder_bo
 import 'package:cloyhapp/features/MyProfile/presentation/views/MyProfile_Screen.dart';
 import 'package:cloyhapp/features/Prodect/presentation/views/prodect_card_screen.dart';
 import 'package:cloyhapp/features/Prodect/presentation/views/prodect_rating_screen.dart';
+import 'package:cloyhapp/features/Prodect/presentation/views/prodect_screen.dart';
 import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
 import 'package:cloyhapp/features/payment/presentation/views/payment_cards.dart';
 import 'package:cloyhapp/features/settings/presentation/views/settings_screen.dart';
@@ -27,9 +28,10 @@ class MyApp extends StatelessWidget {
       // title: 'Flutter Demo',
       theme: ThemeData.light(
       ),
-       // debugShowCheckedModeBanner: false,
-       // onGenerateRoute: appRouter.generateRoute,
-      home:CheckOut(),
+       debugShowCheckedModeBanner: false,
+       onGenerateRoute: appRouter.generateRoute,
+
+
 
     );
   }

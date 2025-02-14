@@ -45,7 +45,7 @@ class ForgetBody extends StatelessWidget {
           ),
           btnMain(
               onPressed: () {
-                Navigator.pushNamed(context, 'homescreen');
+                Navigator.pushNamed(context, 'HomeScreen');
               },
               text: "SEND"),
         ],

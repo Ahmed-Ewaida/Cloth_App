@@ -17,8 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   goToHomeScreen() {
-    Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, "ShippingAddressBody");
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.pushReplacementNamed(context, "RegisterScreen");
     });
   }
 

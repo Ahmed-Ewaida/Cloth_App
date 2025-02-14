@@ -53,7 +53,6 @@ class TotalAmountDetails extends StatelessWidget {
                           ),
                           const SizedBox(height: 10),
                           PromoCode(),
-
                           SizedBox(
                             height: 200,
                             child: ListView.builder(

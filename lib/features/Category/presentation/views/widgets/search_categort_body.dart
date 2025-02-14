@@ -1,4 +1,5 @@
 import 'package:cloyhapp/core/Utils/Widgets/btn_main.dart';
+import 'package:cloyhapp/features/Catalog/presentation/views/catalog_screen.dart';
 import 'package:flutter/material.dart';
 
 class SearchCategortBody extends StatelessWidget {
@@ -31,7 +32,9 @@ class SearchCategortBody extends StatelessWidget {
               SizedBox(
                 height: 16,
               ),
-              btnMain(onPressed: () {}, text: 'View All Items'),
+              btnMain(onPressed: () {
+                Navigator.push(context,MaterialPageRoute(builder: (context) => const CatalogScreen()));
+              }, text: 'View All Items'),
               SizedBox(
                 height: 16,
               ),
