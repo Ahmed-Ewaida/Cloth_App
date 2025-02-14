@@ -7,8 +7,8 @@ import 'package:cloyhapp/features/MyProfile/presentation/views/MyProfile_Screen.
 import 'package:cloyhapp/features/Prodect/presentation/views/prodect_card_screen.dart';
 import 'package:cloyhapp/features/Prodect/presentation/views/prodect_rating_screen.dart';
 import 'package:cloyhapp/features/checkOut/presentation/view/checkOut.dart';
+import 'package:cloyhapp/features/payment/presentation/views/payment_cards.dart';
 import 'package:cloyhapp/features/settings/presentation/views/settings_screen.dart';
-import 'package:cloyhapp/features/settings/presentation/views/widgets/settings_body.dart';
 import 'package:flutter/material.dart';
 import 'package:cloyhapp/core/app_router.dart';
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       ),
        // debugShowCheckedModeBanner: false,
        // onGenerateRoute: appRouter.generateRoute,
-      home:SettingsScreen(),
+      home:PaymentCards(),
 
     );
   }
