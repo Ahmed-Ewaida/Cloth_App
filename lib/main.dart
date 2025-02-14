@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       ),
        // debugShowCheckedModeBanner: false,
        // onGenerateRoute: appRouter.generateRoute,
-      home:PaymentCards(),
+      home:MainHomeScreen(),
 
     );
   }

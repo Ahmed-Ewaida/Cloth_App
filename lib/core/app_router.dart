@@ -27,8 +27,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => CategoryScreen());
       case 'SearchCategortBody':
         return MaterialPageRoute(builder: (_) => SearchCategortBody());
-      // case 'CheckOut':
-      //   return MaterialPageRoute(builder: (_) => CheckOut());
+        case 'CheckOut':
+         return MaterialPageRoute(builder: (_) => CheckOut());
       case 'shippingAddressHome':
         return MaterialPageRoute(builder: (_) => shippingAddressHome());
       // case 'detailsScreen':return MaterialPageRoute(builder: (_)=>DetailsScreen());
