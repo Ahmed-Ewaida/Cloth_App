@@ -17,7 +17,7 @@ class _SettingsChangePaaswordState extends State<SettingsChangePaasword> {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-        Text("Password",
+        Text("Password ",
         style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),),
     TextButton(
     onPressed: (){
