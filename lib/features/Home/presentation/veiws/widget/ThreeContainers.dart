@@ -7,9 +7,7 @@ class ThreeContainers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      /////////////////////   اه والله انا زهقت اميره عسل اصلا
-      /////////////////////////////////////////// الغلط اني استخدم ال expanded with single scrollview
-      height: 400,
+     height: 400,
       width: double.infinity,
       child: Row(
         children: [
