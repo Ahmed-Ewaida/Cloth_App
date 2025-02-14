@@ -1,8 +1,8 @@
 import 'package:cloyhapp/core/Utils/Widgets/btn_main.dart';
 import 'package:flutter/material.dart';
 
-class CreditCard extends StatelessWidget {
-  const CreditCard({super.key});
+class CreditCardA extends StatelessWidget {
+  const CreditCardA({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,33 +17,38 @@ class CreditCard extends StatelessWidget {
                 .bottom + 16,
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
+              IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.close)),
               const TextField(
                 decoration: InputDecoration(
                   labelText: "Name on card",
                   border: OutlineInputBorder(),
                 ),
               ),
+              SizedBox(height: 20,),
               const TextField(
                 decoration: InputDecoration(
                   labelText: "Card number",
                   border: OutlineInputBorder(),
                 ),
               ),
+              SizedBox(height: 20,),
               const TextField(
                 decoration: InputDecoration(
                   labelText: "Expire Date",
                   border: OutlineInputBorder(),
                 ),
               ),
+              SizedBox(height: 20,),
               const TextField(
                 decoration: InputDecoration(
                   labelText: "CVV",
                   border: OutlineInputBorder(),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 30),
               Row(
                 children: [
                   Checkbox(value: true, onChanged: (value) {}),

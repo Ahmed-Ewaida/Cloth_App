@@ -1,8 +1,9 @@
+import 'package:cloyhapp/features/payment/presentation/views/widgets/choose_card.dart';
 import 'package:cloyhapp/features/payment/presentation/views/widgets/credit_card.dart';
 import 'package:flutter/material.dart';
 
 class PaymentCardsBody extends StatefulWidget {
-   PaymentCardsBody({super.key});
+  PaymentCardsBody({super.key});
 
   @override
   State<PaymentCardsBody> createState() => _PaymentCardsBodyState();
@@ -10,8 +11,7 @@ class PaymentCardsBody extends StatefulWidget {
 
 class _PaymentCardsBodyState extends State<PaymentCardsBody> {
   int selectedCardIndex = 0;
-  bool checkbox=false;
-
+  bool checkbox = false;
 
   @override
   Widget build(BuildContext context) {
@@ -37,8 +37,18 @@ class _PaymentCardsBodyState extends State<PaymentCardsBody> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           SizedBox(height: 16),
 
-          
-
+          ChooseCard(),
+          FloatingActionButton(
+            onPressed: () {
+              Scaffold.of(context)
+                  .showBottomSheet((BuildContext context) => CreditCardA());
+            },
+            backgroundColor: Colors.black,
+            child: Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );

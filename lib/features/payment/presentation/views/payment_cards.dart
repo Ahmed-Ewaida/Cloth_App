@@ -9,17 +9,10 @@ class PaymentCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black,
-          onPressed: () {
-            scaffoldkey.currentState!
-                .showBottomSheet((context) => CreditCard());
-          },
-          child: Icon(Icons.add),
-
-    ),
-      body: PaymentCardsBody(),
+    return SafeArea(
+      child: Scaffold(
+        body: PaymentCardsBody(),
+      ),
     );
   }
 }
