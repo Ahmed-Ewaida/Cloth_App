@@ -54,14 +54,13 @@ class TotalAmountDetails extends StatelessWidget {
                           const SizedBox(height: 10),
                           PromoCode(),
 
-                          ///
                           SizedBox(
                             height: 200,
                             child: ListView.builder(
                               shrinkWrap: true,
                               itemCount: 5,
                               itemBuilder: (context, index) {
-                              //  return const ContainerShowModal(); //////////
+                                return const ContainerShowModal();
                               },
                             ),
                           ),
@@ -81,7 +80,7 @@ class TotalAmountDetails extends StatelessWidget {
             ),
             child: const Text(
               'CHECK OUT',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Color(0xffffffff)),
             ),
           ),
         ),
