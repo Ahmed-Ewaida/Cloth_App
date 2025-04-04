@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 class SettingsTextformfield extends StatelessWidget {
   const SettingsTextformfield({super.key, required this.labelText, required this.hintText});

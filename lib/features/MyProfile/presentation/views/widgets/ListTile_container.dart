@@ -1,14 +1,13 @@
-import 'package:cloyhapp/features/MyProfile/presentation/views/widgets/listTile.dart';
 import 'package:flutter/material.dart';
 class ListtileContainer extends StatelessWidget {
-   ListtileContainer({super.key, required this.title, required this.subtitle});
+   const ListtileContainer({super.key, required this.title, required this.subtitle});
   final String title;
    final String subtitle;
 
    @override
   Widget build(BuildContext context) {
     return
-        Container(
+        SizedBox(
           width: 375,
           height: 70,
           child: Column(
@@ -19,10 +18,10 @@ class ListtileContainer extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("$title",style: TextStyle(fontSize:16 ),),
+                      Text(title,style: TextStyle(fontSize:16 ),),
                       SizedBox(height: 5,),
 
-                      Text("$subtitle",style: TextStyle(fontSize:11,color: Color(0xff9B9B9B) ),),
+                      Text(subtitle,style: TextStyle(fontSize:11,color: Color(0xff9B9B9B) ),),
                     ],
                   ),
                   Icon(Icons.arrow_forward_ios,size: 20,color: Colors.black87,),

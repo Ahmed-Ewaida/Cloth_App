@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:cloyhapp/core/Assets/assets_images.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +13,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     goToHomeScreen();
     super.initState();
   }

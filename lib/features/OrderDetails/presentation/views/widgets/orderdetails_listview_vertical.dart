@@ -15,6 +15,6 @@ class OrderdetailsListviewVertical extends StatelessWidget {
         itemBuilder: (context,index){
           return OrderdetailsListviewVerticalItem();
         },itemCount: 6,
-      );;
+      );
   }
 }

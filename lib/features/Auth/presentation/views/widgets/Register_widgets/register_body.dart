@@ -1,10 +1,7 @@
-import 'package:cloyhapp/core/Utils/color.dart';
 import 'package:cloyhapp/features/Auth/presentation/views/Widgets/social_account_items.dart';
-import 'package:cloyhapp/features/Auth/presentation/views/Widgets/text_onpressed.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/Utils/Widgets/btn_main.dart';
-import '../social_btn.dart';
 
 class RegisterBody extends StatelessWidget {
   const RegisterBody({super.key});

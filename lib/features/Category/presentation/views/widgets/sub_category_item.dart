@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/Assets/assets_images.dart';
 
 class SubCategoryItem extends StatelessWidget {
   const SubCategoryItem({

@@ -17,7 +17,7 @@ class ForgetBody extends StatelessWidget {
             "Forget password",
             style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
           )),
-          Container(
+          SizedBox(
             height: 150,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

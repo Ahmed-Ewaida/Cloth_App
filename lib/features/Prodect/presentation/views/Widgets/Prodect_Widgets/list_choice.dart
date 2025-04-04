@@ -31,7 +31,7 @@ class _ListChoiceState extends State<ListChoice> {
               child: Icon(click==false?Icons.favorite_border:Icons.favorite ,size: 50,))
         ],
       ),
-    );;
+    );
   }
 }
 

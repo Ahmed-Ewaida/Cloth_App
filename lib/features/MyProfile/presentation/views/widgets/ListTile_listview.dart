@@ -9,7 +9,7 @@ class ListtileListview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(itemBuilder: (context,i){
-        return ListtileContainer(title:"${list_tile[i].title}", subtitle: "${list_tile[i].subtitle}");
+        return ListtileContainer(title:list_tile[i].title, subtitle: list_tile[i].subtitle);
       },
         itemCount: list_tile.length,
       ),

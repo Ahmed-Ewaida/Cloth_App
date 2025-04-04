@@ -14,6 +14,6 @@ class OrderdetailsListviewVerticalImage extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(8)
       ),
-    );;
+    );
   }
 }

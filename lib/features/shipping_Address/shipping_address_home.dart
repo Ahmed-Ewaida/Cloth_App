@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:cloyhapp/features/shipping_Address/shipping_address_body.dart';
 import 'package:flutter/material.dart';
 
